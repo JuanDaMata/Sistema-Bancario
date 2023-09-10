@@ -1,0 +1,22 @@
+{
+  "name": "sistema-bancario",
+  "version": "1.0.0",
+  "description": "Esse projeto foi desenvolvido no desafio do módulo II do curso da Cubos Academy",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.js"
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "npm"
+  ],
+  "author": "Juan Da Mata",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
