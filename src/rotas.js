@@ -1,15 +1,17 @@
 const { Router } = require('express');
-const clientes = require('./controladores/clientes');
-const rotas = Router();
+const contasUsuarios = require('./controladoresDeContas/contasControlador');
+const transacoesUsuarios = require('./controladoresDeTransacoes/transacoesControlador');
 
-rotas.get('/contas?senha_banco=Cubos123Bank', clientes.listarContasBancarias);
-rotas.post('/contas', clientes.novaConta);
-rotas.put('/contas/:numeroConta/usuario', clientes.atualizarDadosDeUsuario);
-rotas.delete('/contas/:numeroConta', clientes.excluirConta);
-rotas.post('/transacoes/depositar', clientes.fazerDeposito);
-rotas.post('/transacoes/sacar', clientes.sacarDinheiro);
-rotas.post('/transacoes/transferir', clientes.fazerTransferencias);
-rotas.get('/contas/saldo?numero_conta=123&senha=123', clientes.mostrarSaldo);
-rotas.get('/contas/extrato?numero_conta=123&senha=123', clientes.consultarExtrato);
+const rotas = Router()
+
+rotas.get('/contas', contasUsuarios.listarContasBancarias);
+rotas.post('/contas', contasUsuarios.novaConta);
+rotas.put('/contas/:numeroConta/usuario', contasUsuarios.atualizarDadosDeUsuario);
+rotas.delete('/contas/:numeroConta', contasUsuarios.excluirConta);
+rotas.post('/transacoes/depositar', transacoesUsuarios.realizarDeposito);
+rotas.post('/transacoes/sacar', transacoesUsuarios.sacarDinheiro);
+rotas.post('/transacoes/transferir', transacoesUsuarios.fazerTransferencias);
+rotas.get('/contas/saldo', contasUsuarios.mostrarSaldo);
+rotas.get('/contas/extrato', contasUsuarios.consultarExtrato);
 
 module.exports = rotas;
