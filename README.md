@@ -8,4 +8,5 @@ Para executado basta fazer um fork desse repositório para seu GitHub, logo apó
 
 # Funcionamento
 exemplo de como fica uns dos Endpoints do projeto
-![criar uma conta (2)](https://github.com/JuanDaMata/Sistema-Bancario/assets/139510363/23f9eca1-3c10-40e7-8ce6-f81a7608ebdb)
+
+![criar uma conta (2)](https://github.com/JuanDaMata/Sistema-Bancario/assets/139510363/f526be44-0262-4214-83be-d2caea8bfa20)
