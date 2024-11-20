@@ -26,6 +26,7 @@
 	<img alt="Status Concluído" src="https://img.shields.io/badge/STATUS-CONCLU%C3%8DDO-brightgreen">
 </p>
 
+
 <p align="center">
  <a href="#-sobre-o-projeto">Sobre</a> •
  <a href="#-funcionalidades">Funcionalidades</a> •
@@ -47,7 +48,7 @@ A Cubos Academy é uma escola com cursos de tecnologia para todos os perfis, do 
 
 ---
 
-## ⚙️ Funcionalidades
+## ⚙ Funcionalidades
 
 - [x] 1º Criar conta bancária:
   - 📌 A requisição deverá possuir um objeto com as seguintes propriedades (respeitando estes nomes):
